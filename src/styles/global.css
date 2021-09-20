@@ -13,6 +13,8 @@ body {
 :root {
   --gris-oscuro: #24282f;
   --amarillo: #ff9900;
+  --gris-footer: #202329;
+  --gris-tarjeta: #3c3e44;
 }
 
 /*Familia de tipografias*/

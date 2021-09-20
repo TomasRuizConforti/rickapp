@@ -1,5 +1,6 @@
 import React from "react";
 import Tarjeta from "./Tarjeta";
+import "../styles/SeccionPrincipal.module.css";
 
 const SeccionPrincipal = () => {
   return (
