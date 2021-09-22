@@ -4,7 +4,7 @@ import "../styles/PieDePagina.module.css";
 const PieDePagina = () => {
   return (
     <footer>
-      <ul>
+      <ul className="primera_parte">
         <li>
           <a href="">CHARACTERS</a>
         </li>
@@ -15,12 +15,12 @@ const PieDePagina = () => {
           <a href="">EPISODES</a>
         </li>
       </ul>
-      <ul>
+      <ul className="segunda_parte">
         <li>
           <a href="">SERVER STATUS</a>
         </li>
       </ul>
-      <ul>
+      <ul className="tercera_parte">
         <li>
           <a href="">
             <img src="" alt="Git Hub" />
