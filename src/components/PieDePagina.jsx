@@ -1,26 +1,31 @@
 import React from "react";
 import "../styles/PieDePagina.module.css";
 
+const primera_parte = ["CHARACTERS", "LOCATIONS", "EPISODES"];
+const transformarPrimeraParte = (texto) => {
+  return (
+    <li>
+      <a href="/">{texto}</a>
+    </li>
+  );
+};
+const primeraParte = primera_parte.map(transformarPrimeraParte);
+
+const segunda_parte = ["SERVER STATUS"];
+const transformarSegundaParte = (texto) => {
+  return (
+    <li>
+      <a href="">{texto}</a>
+    </li>
+  );
+};
+const segundaParte = segunda_parte.map(transformarSegundaParte);
 const PieDePagina = () => {
   return (
     <footer>
-      <ul className="primera_parte">
-        <li>
-          <a href="">CHARACTERS</a>
-        </li>
-        <li>
-          <a href="">LOCATIONS</a>
-        </li>
-        <li>
-          <a href="">EPISODES</a>
-        </li>
-      </ul>
-      <ul className="segunda_parte">
-        <li>
-          <a href="">SERVER STATUS</a>
-        </li>
-      </ul>
-      <ul className="tercera_parte">
+      <ul>{primeraParte}</ul>
+      <ul>{segundaParte}</ul>
+      <ul>
         <li>
           <a href="">
             <img src="" alt="Git Hub" />
